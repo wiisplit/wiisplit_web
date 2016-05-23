@@ -20,6 +20,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="static/custom/js/move-top.js"></script>
 <script type="text/javascript" src="static/custom/js/easing.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD71_0mkBkvCV5bzS4KC0pRXMrnXsKSL34&libraries=places&callback=initAutocomplete" async defer></script>
+<script type="text/javascript" src="static/custom/js/places-autocomplete-addressform.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -80,90 +82,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="banner-right">
 				<h3><span>Search For Internet</span></h3>
 				<div class="reservation">
-					<div class="section_room">
-						<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-						<select id="country" onchange="change_country(this.value)" class="frm-field required">
-							<option value="null">Country</option>
-							<option value="null">Denmark</option>         
-							<option value="AX">Sweden</option>
-							<option value="AX">New Zealand</option>
-							<option value="AX">America</option>
-							<option value="AX">Australia</option>
-						</select>
-					</div>	
-					<div class="section_room">
-						<span aria-hidden="true"></span>
-						<!--<select id="country1" onchange="change_country(this.value)" class="frm-field required">
-							<option value="null">Type of property</option>
-							<option value="null">Property1</option>         
-							<option value="AX">Property2</option>
-							<option value="AX">Property3</option>
-							<option value="AX">Property4</option>
-							<option value="AX">Property5</option>
-						</select>-->
-					</div> 
-					<div class="reservation-grids">
-						<div class="reservation-grid-left">
-							<div class="section_room">
-								<span class="tent"> </span>
-								<select id="country2" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">State</option>
-									<option value="null">1</option>         
-									<option value="AX">2</option>
-									<option value="AX">3</option>
-									<option value="AX">4</option>
-									<option value="AX">More</option>
-								</select>
-							</div>
-						</div>
-						<div class="reservation-grid-right">
-							<div class="section_room">
-								<span class="bath"></span>
-								<select id="country3" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">City</option>
-									<option value="null">Any</option>         
-									<option value="AX">2</option>
-									<option value="AX">3</option>
-									<option value="AX">4</option>
-									<option value="AX">More</option>
-								</select>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="reservation-grids">
-						<div class="reservation-grid-left">
-							<div class="section_room">
-								<span class="glyphicon glyphicon-yen" aria-hidden="true"></span>
-								<select id="country2" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Price From Min</option>
-									<option value="null">No Minimum</option>         
-									<option value="AX">1000Yen</option>
-									<option value="AX">3000Yen</option>
-									<option value="AX">4000Yen</option>
-									<option value="AX">5000Yen</option>
-								</select>
-							</div>
-						</div>
-						<div class="reservation-grid-right">
-							<div class="section_room">
-								<span class="glyphicon glyphicon-yen" aria-hidden="true"></span>
-								<select id="country3" onchange="change_country(this.value)" class="frm-field required">
-									<option value="null">Price From Max</option>
-									<option value="null">Any</option>         
-									<option value="AX">15000Yen</option>
-									<option value="AX">25000Yen</option>
-									<option value="AX">35000Yen</option>
-									<option value="AX">More</option>
-								</select>
-							</div>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
 					<div class="keywords">
 						<form action="#" method="post">
 							<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
-							<input type="text" name="Key Words" placeholder="Address" required=" ">
+							<input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text"></input>
 							<input type="submit" value="Search">
 						</form>
 					</div>
