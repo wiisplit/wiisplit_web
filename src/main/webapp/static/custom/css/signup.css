@@ -1,0 +1,168 @@
+
+
+.submit {
+  margin-top: 1em;
+}
+/*-----common-form-styllings-------*/
+form {
+    padding: 0 0.2em 5em 0.2em;
+}
+form li{
+  list-style: none;
+    margin-bottom: 0.6em;
+    width: 100%;
+    border: 1px solid#999;
+    background: none;
+    -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+form li:hover{
+   border: 1px solid#00B6FF;
+}
+.icon{
+  height:9px;
+  width: 8px;
+  display: block;
+  float: left;
+  margin: 19px -14px 0px 8px;
+}
+.arrow{
+  background: url(../images/arrow.png) no-repeat -13px -1px;
+  
+}
+
+form li:hover a.arrow{
+  background: url(../images/arrow.png) no-repeat 2px -1px;
+  
+}
+form li:hover input[type="text"],form li:hover input[type="password"]{
+  color: #010101;
+  }
+
+input[type="text"], input[type="password"] {
+  width: 60%;
+  padding: 0.4em 1em 0.6em 1.5em;
+  color: #858282;
+  font-size: 17px;
+  outline: none;
+  background: none;
+  font-weight: 500;
+  border: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  }
+  .submit{
+  }
+.submit input[type="submit"]{
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0.7em 0.8em;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  background: #00B6FF;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font-family: 'Ubuntu', sans-serif;
+}
+input[type="submit"]:hover{
+  background:#507CC0;
+}
+.center {
+	text-align:center;
+	font-size:18px;
+	margin-top:12px;
+}
+.top {
+	margin-top:18px;
+}
+.bottom {
+	margin-bottom:-45px;
+}
+.padding {
+	padding-left:115px !important;
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+.padding1 {
+	padding-top:5px !important;
+	padding-bottom:10px !important;
+}
+.size {
+	font-size:20px !important;
+	padding-left:9px;
+}
+.icon-padding {
+	padding-left:20px !important;
+}
+ #customBtn {
+      display: inline-block;
+      background: #DD4B39;
+      color: #fff;
+      width: 362px;
+      border-radius: 5px;
+      border: 1px solid #DD4B39; 
+   /*   box-shadow: 1px 1px 1px grey;  */
+      white-space: nowrap;
+      padding-top:10px;
+      padding-bottom:10px;
+    }
+    #customBtn:hover {
+      background:#C23321;
+      cursor:pointer;
+    }
+    span.label {
+      font-family: serif;
+      font-weight: normal;
+    }
+    span.buttonText {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 89px;
+      padding-right: 42px;
+      font-size: 14px;
+      font-weight: bold;
+      /* Use the Roboto font that is loaded in the <head> */
+      font-family: 'Roboto', sans-serif;
+    }
+/*-----start-responsive-design------*/
+ /* form {
+  padding: 0 1em 5em 1em;
+  } */
+  input[type="text"], input[type="password"] {
+  width: 80%;
+  padding: 0.6em 1em 0.6em 1.5em;
+  color: #858282;
+  font-size: 15px;
+  }
+  .icon {
+  margin: 14px -14px 0px 8px;
+  }
+  .submit input[type="submit"] {
+  font-size: 1em;
+  padding: 0.7em 0.8em;
+  }
+  form.lost {
+  padding: 0 1em 3em 1em;
+  }
+  @media (min-width: 768px) {  
+ /* .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  } */
+  .modal1-sm {
+    width: 400px;
+  }
